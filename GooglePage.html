@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="https://i.pinimg.com/originals/16/3c/c4/163cc4f5442f7339980ae8f5aca14df1.png">
+</head>
+<style>
+    .background {
+        background-color: hsla(9, 100%, 64%, 0.2);
+    }
+
+    h4 {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    h1 {
+        font-family: 'Indie Flower', cursive;
+    }
+
+    .picture {
+        width: 400px;
+    }
+
+    .picture2 {
+        width: 398px;
+    }
+
+    #map {
+        height: 400px;
+        width: 1420px;
+    }
+
+</style>
+
+<body class="background">
+    <center>
+
+        <head>
+
+            <h1>Hello welcome to my page</h1>
+        </head>
+        <h2> Movie Share </h2>
+        <h3>&lt;The Danish Girl &gt; 2015</h3>
+        <img class="picture" src="https://readyornat.files.wordpress.com/2015/09/danish-girl-poster-redmayne.jpg" alt="The danish girl">
+        <img class="picture2" src="http://ondemand.upc.at/rcms/upload/201605_Mai/DanishGirlThe.jpg" alt="The danish girl2">
+
+        <h3><u>Trailer The Danish Girl</u> </h3>
+
+        <body>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_RgybD5nJb4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></body>
+        <center>
+            <h3>My Google Maps</h3>
+        </center>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var uluru = {
+                    lat: 55.676098,
+                    lng: 12.568337
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOOnXFNmScPxxAbafjd4V675DCiQci_6c&callback=initMap">
+
+
+        </script>
+    </center>
+</body>
+
+</html>
